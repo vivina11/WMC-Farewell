@@ -1,0 +1,131 @@
+body{
+    background-color: #1B1212;
+} 
+
+.header-container{
+    position: relative;
+}
+
+.header-image{
+    width: 100%;
+    height: 100%;
+}
+
+.text-container {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 96%;
+    text-align: center;
+    background-color: rgb(41, 41, 41, 0.5);
+    padding: 1rem;
+}
+
+
+.karma-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+#prachi{
+    background-color: firebrick;
+    background-image: url("./assets/images/Red_Background.jpg");
+}
+
+#sourabh{
+    background-color: firebrick;
+    background-image: url("./assets/images/Red_Background.jpg");
+}
+#rishika{
+    background-color: firebrick;
+    background-image: url("./assets/images/Red_Background.jpg");
+}
+#abhilash{
+    background-color: firebrick;
+    background-image: url("./assets/images/Red_Background.jpg");
+}
+
+.body-container{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.body-container > div {
+    border-radius: 10%;
+}
+
+.body-container > div > a > img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+hr{
+    border: 1px solid bisque;
+    width:85%;
+}
+
+footer{
+    color: wheat;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: bisque;
+}
+
+.colleague-body{
+    display: flex;
+    justify-content: space-around;
+}
+.colleague-body > img{
+    background-image: url('./assets/images/Rishika_Image.jpg');
+    height: 100vh;
+}
+.colleague-body > div{
+    flex-basis: 50%;
+    align-self: center;
+    background-image: url("./assets/images/Green_Background.jpg");
+    color: bisque;
+    height: 50%;
+    text-align: justify;
+    padding: 2rem;
+}
+
+@media (max-width: 1000px){
+    .text-container > .karma-image, .text-container > p {
+        display: none;
+    } 
+
+    .header-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+    }
+
+    .body-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5%;
+        height: 100vh;
+    }
+
+}
+
+
+
